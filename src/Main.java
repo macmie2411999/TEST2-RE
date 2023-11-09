@@ -10,14 +10,14 @@ public class Main {
         ArrayList<Integer> arrayList2 = new ArrayList<>(Arrays.asList(3, 2, 4));
         Integer target2 = 7;
 
-        ArrayList<Integer> arrayList3 = new ArrayList<>(Arrays.asList(3, 7, 8, 9, 3));
-        Integer target3 = 6;
+        ArrayList<Integer> arrayList3 = new ArrayList<>(Arrays.asList(3, 7, 8, 9, 16, 10));
+        Integer target3 = 19;
 
         ArrayList<Integer> arrayList4 = new ArrayList<>(Arrays.asList(5, 3, 7, 8));
         Integer target4 = 600;
 
         // Result Object
-        ResultTEST2 resultTEST2 = new ResultTEST2(0, 0);
+        ResultTEST2 resultTEST2 = new ResultTEST2(-1, -1);
 
         // Test
         testResultComplex(arrayList1, target1, resultTEST2);
@@ -55,7 +55,7 @@ public class Main {
         }
 
         // Call Algo
-        Boolean booleanResult = AlgoTEST2.findTwoSumComplex(listNumber, target, resultTEST2);
+        Boolean booleanResult = AlgoTEST2.findTwoSumOptimize(listNumber, target, resultTEST2);
 
         if (booleanResult){
             System.out.println("Less than 0(n2) - " +  resultTEST2.toString());

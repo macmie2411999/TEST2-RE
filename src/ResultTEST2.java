@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class ResultTEST2 {
     Integer numberOne;
     Integer numberTwo;

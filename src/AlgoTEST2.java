@@ -25,7 +25,7 @@ public class AlgoTEST2 {
 
         for (int ele : listNumber) {
             if (map.containsKey(target - ele)) {
-                System.out.println(map.get(target - ele));
+//                System.out.println(map.get(target - ele));
 
                 resultTEST2.setNumberOne(map.get(target - ele));
                 resultTEST2.setNumberTwo(listNumber.indexOf(ele));
